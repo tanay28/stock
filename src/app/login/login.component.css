@@ -1,0 +1,50 @@
+.custom {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  padding: 110px;
+  color: blue;
+  font-style: normal;
+  font-stretch: ultra-expanded;
+  font-size: -webkit-xxx-large;
+  text-transform: capitalize;
+  text-shadow: 3px 2px gray;
+  position: relative;
+  top: 176px;
+  left: 100px;
+}
+nz-alert {
+  margin-bottom: 12px;
+}
+.login {
+  width: 500px;
+  height: 360px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 184px;
+}
+.login-form {
+  max-width: 300px;
+  position: relative;
+  left: 102px;
+  padding: 15px;
+  padding-top: 40px;
+}
+
+.login-form-margin {
+  margin-bottom: 16px;
+}
+
+.login-form-forgot {
+  float: right;
+}
+
+.login-form-button {
+  width: 100%;
+}
+.login-title {
+  position: relative;
+  left: 212px;
+  top: 25px;
+}

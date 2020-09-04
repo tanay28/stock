@@ -1,0 +1,41 @@
+<div nz-row>
+  <nz-spin [nzSpinning]="isSpinning">
+    <div nz-col nzSpan="12">
+      <input
+        type="file"
+        #fileImportInput
+        name="cfile"
+        (change)="fileChangeListener($event)"
+        multiple
+      />
+    </div>
+    <div nz-col nzSpan="12">
+      <button (click)="uploadData()">Upload</button>
+    </div>
+  </nz-spin>
+</div>
+<nz-divider></nz-divider>
+<div nz-row *ngIf="showData">
+  <div nz-col nzSpan="24">
+    <nz-table #basicTable [nzData]="dataInfo">
+      <thead>
+        <tr>
+          <th>Stock Name</th>
+          <th>Data From</th>
+          <th>data To</th>
+          <th>FIle Name</th>
+          <th>Created At</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of basicTable.data">
+          <td>{{ data.stock }}</td>
+          <td>{{ data.from }}</td>
+          <td>{{ data.to }}</td>
+          <td>{{ data.filename }}</td>
+          <td>{{ data.createdAt }}</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </div>
+</div>
